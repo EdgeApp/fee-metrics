@@ -1,0 +1,31 @@
+{
+  "name": "fee-metrics",
+  "private": true,
+  "scripts": {
+    "fix": "eslint . --fix",
+    "lint": "eslint .",
+    "prepare": "sucrase -q -t typescript,imports -d ./lib ./src",
+    "start": "node -r sucrase/register src/index.ts",
+    "types": "tsc"
+  },
+  "dependencies": {
+    "cleaners": "^0.3.17",
+    "sucrase": "^3.35.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "eslint": "^7.14.0",
+    "eslint-config-standard-kit": "0.15.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^6.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.8.8"
+  }
+}
