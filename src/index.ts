@@ -213,6 +213,6 @@ const server = createServer((req, res) => {
     })
 })
 
-server.listen(3000, () => {
-  console.log('Serving metrics at http://localhost:3000/')
+server.listen(8008, () => {
+  console.log('Serving metrics at http://localhost:8008/')
 })
