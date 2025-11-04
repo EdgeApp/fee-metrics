@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "fee-metrics",
+      "script": "./lib/index.js",
+      "error_file": "/var/log/pm2/fee-metrics-errors.log",
+      "out_file": "/var/log/pm2/fee-metrics-server.log"
+    }
+  ]
+}
